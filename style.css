@@ -467,6 +467,7 @@ nav{
     color: #fff;
     margin-bottom: 1.5rem;
     font-weight: 2600;
+    text-align: center;
   }
 
   .portfolio-item:hover .hover-items{
@@ -506,3 +507,5 @@ nav{
   .portfolios .portfolio-item .hover-items .icons .icon:hover i {
     color: gray;
   }
+
+  
