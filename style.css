@@ -513,12 +513,31 @@ nav{
   }
 
   /* Blogs style begining */
+
+  .blog-header {
+    text-align: center;
+    margin-top: 5rem; /* Adjust as needed */
+    padding: 1rem 0;
+  }
+ 
+  .blog-header h2 {
+    font-size: 5rem;
+    color: white;
+  }
+  .blog-header h2 span{
+    color: #e9204f;
+  }
+
   .blogs{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3.5rem;
-    margin-top: 3rem;
-    margin-top: 150px;
+    margin-top: 2rem;
+    margin-left: 7.01rem;
+    
+  
+
+    
   }
 
   .blogs .blog{
