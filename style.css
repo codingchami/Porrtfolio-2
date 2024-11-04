@@ -82,7 +82,8 @@ nav {
 .nav-content-2 button {
   width: 150px;
   height: 40px;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.916), rgba(128, 128, 128, 0.577), white);  /* use linear gradint */
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.916), rgba(128, 128, 128, 0.577), white);
+  /* use linear gradint */
   border-radius: 30px;
   margin-left: 15px;
   border: none;
@@ -92,7 +93,8 @@ nav {
 
 /* Using pseudo classes for styling */
 .nav-content-2 button:hover {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.916), rgba(128, 128, 128, 0.577), white);  /* use linear gradint */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.916), rgba(128, 128, 128, 0.577), white);
+  /* use linear gradint */
 }
 
 /* gives the fix size for the logo image */
@@ -216,16 +218,19 @@ nav {
 }
 
 .main-btn {
-  border-radius: 15px 50px;  /* rounded corners */
+  border-radius: 15px 50px;
+  /* rounded corners */
   color: inherit;
   font-weight: 600;
   position: relative;
-  border: 1px solid rgba(229, 229, 214, 0.105);     /* using borders */
+  border: 1px solid rgba(229, 229, 214, 0.105);
+  /* using borders */
   display: flex;
   align-self: flex-start;
   align-items: center;
   overflow: hidden;
 }
+
 /* gives the styles for content inside the button */
 .main-btn .btn-text {
   padding: 0 2rem;
@@ -252,7 +257,7 @@ nav {
   z-index: -1;
 }
 
- /* Adds a faster transition effect when hovering over .main-btn */
+/* Adds a faster transition effect when hovering over .main-btn */
 .main-btn:hover {
   transition: all 0.1s ease-out;
 }
@@ -312,12 +317,14 @@ nav {
   font-weight: 800;
   margin-bottom: 10px;
 }
+
 /* gives the styles for about page h5 elemnt */
 .about-text h5 {
   font-size: 22px;
   margin-bottom: 20px;
   line-height: 1.4;
 }
+
 /* gives the styles for about page paragraph content */
 .about-text p {
   color: #c6c9d8bf;
@@ -587,7 +594,8 @@ nav {
 
 .portfolio-item:hover .hover-items {
   opacity: 1;
-  transform: scale(1);   /* Activate hover overlay on portfolio item */
+  transform: scale(1);
+  /* Activate hover overlay on portfolio item */
 }
 
 /* Icon Container in Hover Effect */
@@ -638,7 +646,8 @@ nav {
 
 .blog-header h2 {
   font-size: 5rem;
-  color: white;  /* Title color */
+  color: white;
+  /* Title color */
 }
 
 /* Color for highlighted span text */
@@ -700,8 +709,10 @@ nav {
   font-size: 1.5rem;
   margin-bottom: 0.7rem;
   margin-top: 2rem;
-  transition: all 0.4s ease-in-out;   /* Smooth transition for hover */
-  cursor: pointer;  /* Pointer cursor on hover */
+  transition: all 0.4s ease-in-out;
+  /* Smooth transition for hover */
+  cursor: pointer;
+  /* Pointer cursor on hover */
   color: #4e5055;
 }
 
@@ -713,8 +724,10 @@ nav {
 
 .blogs .blog .blog-text p {
   color: white;
-  line-height: 2rem;  /* Line height for readability */
-  padding-bottom: 1rem;   /* Padding below paragraph */
+  line-height: 2rem;
+  /* Line height for readability */
+  padding-bottom: 1rem;
+  /* Padding below paragraph */
   font-size: 1.1rem;
   font-weight: 400;
 }
@@ -727,7 +740,8 @@ nav {
 }
 
 .contact-content-con .left-content {
-  flex: 2;     /* Take 2 parts of the available space */
+  flex: 2;
+  /* Take 2 parts of the available space */
 }
 
 /* Paragraph styles for the left content */
@@ -741,19 +755,22 @@ nav {
   text-overflow: ellipsis;
   text-align: center;
   padding: 4px;
- 
+
 }
 
 .contact-content-con .left-content h4 {
-  margin-top: -0.4rem;   /* Negative margin for alignment */
+  margin-top: -0.4rem;
+  /* Negative margin for alignment */
   font-size: 2rem;
-  text-transform: uppercase;  /* Uppercase text */
+  text-transform: uppercase;
+  /* Uppercase text */
   text-align: center;
   color: #e9204f;
 }
 
 .contact-content-con .left-content p {
-  margin: 1rem 2rem;  /* Margin around paragraph */
+  margin: 1rem 2rem;
+  /* Margin around paragraph */
   line-height: 2rem;
   text-align: center;
 }
@@ -881,66 +898,66 @@ nav {
 
   /* Adjust navigation bar layout */
   nav .nav-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  nav .nav-content-1, 
+  nav .nav-content-1,
   nav .nav-content-2 {
-      width: 100%;
-      text-align: center;
+    width: 100%;
+    text-align: center;
   }
 
   nav ul {
-      flex-direction: column;
-      padding: 0;
-      margin: 10px 0;
+    flex-direction: column;
+    padding: 0;
+    margin: 10px 0;
   }
 
   nav ul li {
-      margin: 5px 0;
+    margin: 5px 0;
   }
 
   nav a button {
-      width: 100%;
+    width: 100%;
   }
 
   /* Adjust header layout */
   .header-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .header-content .left-header, 
+  .header-content .left-header,
   .header-content .right-header {
-      width: 100%;
-      margin: 10px 0;
+    width: 100%;
+    margin: 10px 0;
   }
 
   /* Adjust image size */
   .header-content .image img {
-      width: 150px;
-      height: auto;
-      border-radius: 50%;
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
   }
 
   /* Adjust text and button sizes */
   .header-content .name {
-      font-size: 1.5em;
-      margin-bottom: 10px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
   }
 
   .header-content p {
-      font-size: 1em;
-      margin: 5px 0;
+    font-size: 1em;
+    margin: 5px 0;
   }
 
   .header-content .btn-cv .main-btn {
-      padding: 10px 20px;
-      font-size: 1em;
+    padding: 10px 20px;
+    font-size: 1em;
   }
 }
 
@@ -950,101 +967,101 @@ nav {
 /* Mobile devices (max-width: 600px) */
 @media (max-width: 600px) {
   .nav-content {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .nav-content-2 ul {
-      flex-direction: column;
-      padding: 0;
+    flex-direction: column;
+    padding: 0;
   }
 
   .nav-content-2 ul li {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   .about {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .about-img img {
-      width: 100%;
-      height: auto;
+    width: 100%;
+    height: auto;
   }
 
   .about-text h2 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .progress-bars {
-      width: 100%;
-      padding: 0 10px;
+    width: 100%;
+    padding: 0 10px;
   }
 
   .progress-bar {
-      width: 100%;
-      margin-bottom: 15px;
+    width: 100%;
+    margin-bottom: 15px;
   }
 }
 
 /* Tablet devices (max-width: 900px) */
 @media (max-width: 900px) {
   .nav-content {
-      padding: 10px;
+    padding: 10px;
   }
 
   .nav-content-2 ul {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
   }
 
   .about-text h2 {
-      font-size: 1.8rem;
+    font-size: 1.8rem;
   }
 
   .about-img img {
-      width: 80%;
-      margin-bottom: 20px;
+    width: 80%;
+    margin-bottom: 20px;
   }
 
   .progress-bars {
-      padding: 0 20px;
+    padding: 0 20px;
   }
 
   .progress-bar {
-      width: 48%;
-      margin-bottom: 20px;
+    width: 48%;
+    margin-bottom: 20px;
   }
 }
 
 /* Small desktops (max-width: 1200px) */
 @media (max-width: 1200px) {
   .nav-content {
-      padding: 15px 30px;
+    padding: 15px 30px;
   }
 
   .about {
-      flex-direction: row;
-      align-items: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
   }
 
   .about-img img {
-      width: 50%;
+    width: 50%;
   }
 
   .about-text h2 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .progress-bars {
-      padding: 0 40px;
+    padding: 0 40px;
   }
 
   .progress-bar {
-      width: 45%;
-      margin-bottom: 25px;
+    width: 45%;
+    margin-bottom: 25px;
   }
 }
 
@@ -1053,181 +1070,183 @@ nav {
 /* General styles for smaller screens */
 @media (max-width: 1024px) {
   .nav-content-2 ul {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   .container {
-      padding: 10px;
+    padding: 10px;
   }
 
   .portfolios {
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 }
 
 @media (max-width: 768px) {
   .nav-content {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .nav-content-2 ul {
-      flex-direction: column;
-      gap: 10px;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .portfolios {
-      grid-template-columns: 1fr;
-      gap: 15px;
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 
   .portfolio-item {
-      max-width: 100%;
-      margin: 0 auto;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   .main-title h2 {
-      font-size: 1.8em;
-      text-align: center;
+    font-size: 1.8em;
+    text-align: center;
   }
 
   .port-text {
-      font-size: 1em;
-      text-align: center;
+    font-size: 1em;
+    text-align: center;
   }
 }
 
 @media (max-width: 576px) {
   .nav-content {
-      padding: 10px;
+    padding: 10px;
   }
 
   .nav-content-2 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .nav-content-2 ul {
-      padding: 0;
+    padding: 0;
   }
 
   .container .main-title h2 {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
 
   .portfolio-item {
-      padding: 10px;
+    padding: 10px;
   }
 
   .portfolio-item .hover-items h3 {
-      font-size: 1em;
-      text-align: center;
+    font-size: 1em;
+    text-align: center;
   }
 
   .portfolios {
-      grid-template-columns: 1fr;
-      gap: 10px;
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 }
 
 @media (max-width: 375px) {
   .nav-content {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .nav-content-2 ul li a {
-      font-size: 0.9em;
+    font-size: 0.9em;
   }
 
   .portfolios {
-      grid-template-columns: 1fr;
-      gap: 5px;
+    grid-template-columns: 1fr;
+    gap: 5px;
   }
 
   .portfolio-item .hover-items h3 {
-      font-size: 0.9em;
+    font-size: 0.9em;
   }
 
   .container .main-title h2 {
-      font-size: 1.3em;
+    font-size: 1.3em;
   }
 
   .port-text {
-      font-size: 0.9em;
+    font-size: 0.9em;
   }
 }
 
 /* blog page */
 /* General styles for smaller screens (max-width: 768px) */
 @media (max-width: 768px) {
+
   /* Adjust Navbar */
   .nav-content {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .nav-content-2 ul {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   .nav-content-2 ul li {
-      margin: 10px 0;
+    margin: 10px 0;
   }
 
   /* Blog Section Adjustments */
   .container {
-      padding: 10px;
+    padding: 10px;
   }
 
   .blogs {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   /* Blog Text Alignment */
   .blog-text h4,
   .blog-text p {
-      text-align: center;
+    text-align: center;
   }
 
   /* Reduce Image Size */
   .blog img {
-      width: 100%;
-      height: auto;
+    width: 100%;
+    height: auto;
   }
 }
 
 /* Extra Small Screens (max-width: 480px) */
 @media (max-width: 480px) {
+
   /* Navbar Button Adjustments */
   .nav-content-2 button {
-      font-size: 14px;
-      padding: 8px 16px;
+    font-size: 14px;
+    padding: 8px 16px;
   }
 
   /* Blog Section Padding */
   .blog-header h2 {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
 
   .blogs .blog {
-      padding: 10px;
+    padding: 10px;
   }
 
   /* Blog Text Font Size */
   .blog-text h4 {
-      font-size: 1em;
+    font-size: 1em;
   }
 
   .blog-text p {
-      font-size: 0.9em;
+    font-size: 0.9em;
   }
 }
 
@@ -1237,70 +1256,72 @@ nav {
 
 /* Base media query for small screens (smartphones) */
 @media (max-width: 600px) {
+
   /* Adjust the navigation */
   .nav-content {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .nav-content-2 ul {
-      flex-direction: column;
-      padding: 0;
+    flex-direction: column;
+    padding: 0;
   }
 
   .nav-content-2 ul li {
-      margin: 10px 0;
+    margin: 10px 0;
   }
 
   /* Resize logo */
   .logo img {
-      width: 80px; /* Adjust as necessary */
+    width: 80px;
+    /* Adjust as necessary */
   }
 
   /* Contact section adjustments */
   .contact-container {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .left-content,
   .right-contact {
-      width: 100%;
-      padding: 10px;
+    width: 100%;
+    padding: 10px;
   }
 
   /* Adjust text inputs and textarea */
   .input-control,
   .input-control2 {
-      width: 100%;
+    width: 100%;
   }
 
   .input-control-email,
   .contact-form textarea {
-      width: 100%;
+    width: 100%;
   }
 
   /* Contact icons alignment */
   .contact-icons {
-      justify-content: center;
+    justify-content: center;
   }
 }
 
 /* Tablet view adjustments */
 @media (min-width: 601px) and (max-width: 768px) {
   .nav-content-2 ul {
-      flex-direction: row;
-      justify-content: center;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .contact-container {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .left-content,
   .right-contact {
-      width: 90%;
-      margin: auto;
+    width: 90%;
+    margin: auto;
   }
 
   /* Resize form controls */
@@ -1308,25 +1329,26 @@ nav {
   .input-control2,
   .input-control-email,
   .contact-form textarea {
-      width: 100%;
-      padding: 8px;
+    width: 100%;
+    padding: 8px;
   }
 }
 
 /* Desktop adjustments */
 @media (min-width: 769px) and (max-width: 1024px) {
+
   /* Slightly reduce font size for readability */
   body {
-      font-size: 0.95em;
+    font-size: 0.95em;
   }
 
   /* Adjust padding for a spacious layout */
   .contact-container {
-      padding: 20px;
+    padding: 20px;
   }
 
   .input-control,
   .input-control2 {
-      padding: 10px;
+    padding: 10px;
   }
 }
