@@ -19,12 +19,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* gives the styles for nav bar content */
 nav {
   position: fixed;
   top: 0;
   width: 100%;
   height: 80px;
-  background-image: linear-gradient(to right, rgb(3, 7, 15), rgb(1, 3, 17));
+  background-image: linear-gradient(to right, rgba(28, 31, 37, 0.768), rgb(1, 3, 17));
   z-index: 1000;
   /*it stays above other content */
   border-bottom: 1px solid transparent;
@@ -53,6 +54,7 @@ nav {
   align-items: center;
 }
 
+/* gives the styles for nav bar element list */
 .nav-content-2 ul li {
   display: inline-block;
   margin: 0 15px;
@@ -69,15 +71,18 @@ nav {
 
 }
 
+/* Using pseudo classes for styling when user brings the cursor on the nav bar elements */
 .nav-content-2 ul li a:hover {
   color: #e9204f;
   font-size: 18px;
 }
 
+
+/* create a button for contact option */
 .nav-content-2 button {
   width: 150px;
   height: 40px;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.916), rgba(128, 128, 128, 0.577), white);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.916), rgba(128, 128, 128, 0.577), white);  /* use linear gradint */
   border-radius: 30px;
   margin-left: 15px;
   border: none;
@@ -85,10 +90,12 @@ nav {
   cursor: pointer;
 }
 
+/* Using pseudo classes for styling */
 .nav-content-2 button:hover {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.916), rgba(128, 128, 128, 0.577), white);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.916), rgba(128, 128, 128, 0.577), white);  /* use linear gradint */
 }
 
+/* gives the fix size for the logo image */
 .logo img {
   width: 100%;
   height: auto;
@@ -110,6 +117,7 @@ nav {
   position: relative;
 }
 
+/* gives the styles for home page image */
 .header-content .left-header .image {
   border-radius: 30px;
   height: 90%;
@@ -130,6 +138,7 @@ nav {
 
 }
 
+/* Using pseudo classes for styling */
 .header-content .left-header .image img:hover {
   filter: grayscale(0);
 }
@@ -141,6 +150,7 @@ nav {
   padding-right: 18rem;
 }
 
+/* using transform and translate */
 .header-content .right-header .name {
   font-size: 3rem;
   opacity: 0;
@@ -148,6 +158,7 @@ nav {
   animation: fadeInUp 1.5s ease-out forwards;
 }
 
+/* gives only the red color for the name in home page */
 .header-content .right-header .name span {
   color: #e9204f;
   display: inline-block;
@@ -198,28 +209,29 @@ nav {
   color: #e9204f;
 }
 
+/* gives the styles for donload-cv button */
 .btn-cv {
   display: flex;
   align-self: flex-start;
 }
 
 .main-btn {
-  border-radius: 15px 50px;
-  /* rounded corners */
+  border-radius: 15px 50px;  /* rounded corners */
   color: inherit;
   font-weight: 600;
   position: relative;
-  border: 1px solid rgba(229, 229, 214, 0.105);
+  border: 1px solid rgba(229, 229, 214, 0.105);     /* using borders */
   display: flex;
   align-self: flex-start;
   align-items: center;
   overflow: hidden;
 }
-
+/* gives the styles for content inside the button */
 .main-btn .btn-text {
   padding: 0 2rem;
 }
 
+/* gives the styles for icon inside the button */
 .main-btn .btn-icon {
   background-color: rgba(255, 255, 255, 0.03);
   display: flex;
@@ -229,6 +241,7 @@ nav {
   padding: 1rem;
 }
 
+/* Creates a pseudo-element before .main-btn, used for the background effect */
 .main-btn::before {
   content: "";
   position: absolute;
@@ -239,10 +252,12 @@ nav {
   z-index: -1;
 }
 
+ /* Adds a faster transition effect when hovering over .main-btn */
 .main-btn:hover {
   transition: all 0.1s ease-out;
 }
 
+/* Expands the pseudo-element to cover the full width of .main-btn on hover */
 .main-btn:hover::before {
   width: 100%;
   height: 100%;
@@ -276,6 +291,7 @@ nav {
 
 }
 
+/* gives the related suitable size for the about page image */
 .about-img img {
   width: 500px;
   height: auto;
@@ -289,19 +305,20 @@ nav {
   border: 5px solid rgb(245, 252, 253);
 }
 
+/* gives the styles for about page h2 elemnt */
 .about-text h2 {
   font-family: "Roboto", sans-serif;
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 10px;
 }
-
+/* gives the styles for about page h5 elemnt */
 .about-text h5 {
   font-size: 22px;
   margin-bottom: 20px;
   line-height: 1.4;
 }
-
+/* gives the styles for about page paragraph content */
 .about-text p {
   color: #c6c9d8bf;
   font-size: 1.1rem;
@@ -323,31 +340,37 @@ nav {
   margin-right: 200px;
 }
 
+/* place the progression bars at the correct possitions */
 .about-stats .progress-bars {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 4rem;
 }
 
+/* Main container for all progress bars */
 .about-stats .progress-bars .progress-bar {
   display: flex;
   flex-direction: column;
 }
 
+/* Title styling for each progress bar (e.g., "Java", "Python") */
 .about-stats .progress-bars .progress-bar .prog-title {
   text-transform: uppercase;
   font-weight: 800;
 }
 
+/* Container for the progress text and the bar itself */
 .about-stats .progress-bars .progress-bar .progress-con {
   display: flex;
   align-items: center;
 }
 
+/* Styling for the progress description text*/
 .about-stats .progress-bars .progress-bar .progress-con .prog-text {
   color: gray;
 }
 
+/* Base styling for the progress bar background */
 .about-stats .progress-bars .progress-bar .progress-con .progress {
   width: 100%;
   height: 0.45rem;
@@ -358,6 +381,7 @@ nav {
 
 }
 
+/* Inner span that represents the filled part of the progress bar */
 .about-stats .progress-bars .progress-bar .progress-con .progress span {
   position: absolute;
   top: 0;
@@ -368,6 +392,7 @@ nav {
   /* width: 60%; */
 }
 
+/* Widths for individual skill progress bars */
 .about-stats .progress-bars .progress-bar .progress-con .progress .java {
   width: 85%;
 }
@@ -392,6 +417,7 @@ nav {
   width: 90%;
 }
 
+/* Title Styling */
 .stat-title {
   font-size: 1.4rem;
   text-align: center;
@@ -400,6 +426,7 @@ nav {
   text-transform: uppercase;
 }
 
+/* Center Text Elements */
 .text-center {
   text-align: center;
 }
@@ -424,6 +451,7 @@ nav {
   font-weight: 1000;
 }
 
+/* Service Item Grid Layout */
 .service-item {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
@@ -433,6 +461,7 @@ nav {
   margin-top: 4rem;
 }
 
+/* Service Box Design */
 .service-box {
   padding: 45px 30px;
   background-color: #0b0c0c;
@@ -473,13 +502,14 @@ nav {
   transition: all ease .50s;
 }
 
-/* Using pseudo classes for styling */
+/* Using pseudo classes for Service Button Hover Effect */
 .service-button:hover {
   transform: scale(1.1);
   background: transparent;
   border: 2px solid #e9204f;
 }
 
+/* Service Box Hover Effect */
 .service-box:hover {
   transform: translateY(-10px);
   border: 1px solid #4e5055;
@@ -498,6 +528,7 @@ nav {
   color: #e9204f;
 }
 
+/* Portfolio Text Styling */
 .port-text {
   padding: 2rem 0;
   text-align: center;
@@ -505,6 +536,7 @@ nav {
   font-weight: 600;
 }
 
+/* Portfolio Grid Layout */
 .portfolios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -514,6 +546,7 @@ nav {
   margin-left: 300px;
 }
 
+/* Portfolio Item Design */
 .portfolios .portfolio-item {
   position: relative;
   border-radius: 15px;
@@ -526,6 +559,7 @@ nav {
   object-fit: cover;
 }
 
+/* Hover Effect on Portfolio Items */
 .portfolios .portfolio-item .hover-items {
   width: 100%;
   height: 100%;
@@ -553,9 +587,10 @@ nav {
 
 .portfolio-item:hover .hover-items {
   opacity: 1;
-  transform: scale(1);
+  transform: scale(1);   /* Activate hover overlay on portfolio item */
 }
 
+/* Icon Container in Hover Effect */
 .portfolios .portfolio-item .hover-items .icons {
   display: flex;
   justify-content: center;
@@ -575,16 +610,19 @@ nav {
   transition: all 0.4s ease-in-out;
 }
 
+/* Portfolio Item Hover Icons */
 .portfolios .portfolio-item .hover-items .icons .icon i {
   font-size: 1.5rem;
   color: white;
   margin: 0 1rem;
 }
 
+/* Change background color on icon hover */
 .portfolios .portfolio-item .hover-items .icons .icon:hover {
   background-color: white;
 }
 
+/* Change icon color on hover */
 .portfolios .portfolio-item .hover-items .icons .icon:hover i {
   color: gray;
 }
@@ -600,13 +638,15 @@ nav {
 
 .blog-header h2 {
   font-size: 5rem;
-  color: white;
+  color: white;  /* Title color */
 }
 
+/* Color for highlighted span text */
 .blog-header h2 span {
   color: #e9204f;
 }
 
+/* Blog Grid Layout */
 .blogs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -615,6 +655,7 @@ nav {
   margin-left: 7.01rem;
 }
 
+/* Individual Blog Item Styles */
 .blogs .blog {
   position: relative;
   background-color: #4e505552;
@@ -623,12 +664,14 @@ nav {
   transition: all 0.4s ease-in-out;
 }
 
+/* Blog item hover effects */
 .blogs .blog:hover {
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-5px);
   transition: all 0.4s ease-in-out;
 }
 
+/* Blog Image Styles */
 .blogs .blog img {
   width: 300px;
   height: 300px;
@@ -639,12 +682,14 @@ nav {
   transition: all 0.4s ease-in-out;
 }
 
+/* Image hover effects */
 .blogs .blog:hover img {
   filter: grayscale(0);
   transform: scale(1.3);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
 }
 
+/* Blog Text Styles */
 .blogs .blog .blog-text {
   margin-top: -7px;
   padding: 1.1rem;
@@ -655,11 +700,12 @@ nav {
   font-size: 1.5rem;
   margin-bottom: 0.7rem;
   margin-top: 2rem;
-  transition: all 0.4s ease-in-out;
-  cursor: pointer;
+  transition: all 0.4s ease-in-out;   /* Smooth transition for hover */
+  cursor: pointer;  /* Pointer cursor on hover */
   color: #4e5055;
 }
 
+/* Title hover effects */
 .blogs .blog .blog-text h4:hover {
   color: #e9204f;
   font-size: 1.6rem;
@@ -667,8 +713,8 @@ nav {
 
 .blogs .blog .blog-text p {
   color: white;
-  line-height: 2rem;
-  padding-bottom: 1rem;
+  line-height: 2rem;  /* Line height for readability */
+  padding-bottom: 1rem;   /* Padding below paragraph */
   font-size: 1.1rem;
   font-weight: 400;
 }
@@ -681,9 +727,10 @@ nav {
 }
 
 .contact-content-con .left-content {
-  flex: 2;
+  flex: 2;     /* Take 2 parts of the available space */
 }
 
+/* Paragraph styles for the left content */
 .contact-content-con .left-content .para {
   white-space: nowrap;
   width: 400px;
@@ -698,19 +745,20 @@ nav {
 }
 
 .contact-content-con .left-content h4 {
-  margin-top: -0.4rem;
+  margin-top: -0.4rem;   /* Negative margin for alignment */
   font-size: 2rem;
-  text-transform: uppercase;
+  text-transform: uppercase;  /* Uppercase text */
   text-align: center;
   color: #e9204f;
 }
 
 .contact-content-con .left-content p {
-  margin: 1rem 2rem;
+  margin: 1rem 2rem;  /* Margin around paragraph */
   line-height: 2rem;
   text-align: center;
 }
 
+/* Contact information items */
 .contact-content-con .left-content .contact-info .contact-item {
   display: flex;
   align-items: center;
@@ -741,6 +789,7 @@ nav {
   /* margin-left: 12rem; */
 }
 
+/* Styles for social icons */
 .contact-content-con .left-content .contact-icon a {
   display: flex;
   align-items: center;
@@ -756,11 +805,13 @@ nav {
   font-size: 1.5rem;
 }
 
+/* Icon hover effects */
 .contact-content-con .left-content .contact-icon a:hover {
   background-color: white;
   transform: translateY(-5px);
 }
 
+/* Icon color change on hover */
 .contact-content-con .left-content .contact-icon a:hover i {
   color: #4e5055;
 }
@@ -774,6 +825,7 @@ nav {
   margin: 1.5rem 0;
 }
 
+/* Input control styles */
 .contact-content-con .right-contact .input-control2 input,
 .contact-content-con .right-contact .input-control input,
 .contact-content-con .right-contact .input-control2 textarea {
