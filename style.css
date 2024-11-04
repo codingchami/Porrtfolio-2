@@ -2,18 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
   outline: none;
   border: none;
   scroll-behavior: smooth;
   text-decoration: none;
   list-style: none;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 body {
   color: #fff;
   background-color: #191919;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 nav {
@@ -57,7 +60,7 @@ nav {
 
 .nav-content-2 ul li a,
 .nav-content button {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: aliceblue;
@@ -245,7 +248,6 @@ nav {
   height: 100%;
   background-image: linear-gradient(to left, #e9204f, #e46a87);
   transform: translateX(0);
-  /* transition: all 0.4s ease-out; */
 }
 
 .butn {
@@ -288,7 +290,7 @@ nav {
 }
 
 .about-text h2 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 10px;
@@ -398,32 +400,12 @@ nav {
   text-transform: uppercase;
 }
 
-
-/* .stat-title::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  width: 40%;
-  height: 1px;
-  background-color: var(--color-grey-5);
-  transform: translateX(-50%);
-} */
-
-
-
-/* Service */
-/* .service{
-    background: #101010;
-
-} */
-
 .text-center {
   text-align: center;
 }
 
 .text-center h2 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 10px;
@@ -507,7 +489,7 @@ nav {
 .main-title {
   margin-top: 150px;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 3.5rem;
   font-weight: 1000;
 }
@@ -707,9 +689,12 @@ nav {
   width: 400px;
   border: 4px solid #000000;
   overflow: hidden;
+
   /* text-overflow property specifies how overflowed content that is not displayed should be signaled to the user. */
   text-overflow: ellipsis;
-  margin-left: 140px;
+  text-align: center;
+  padding: 4px;
+ 
 }
 
 .contact-content-con .left-content h4 {
@@ -724,8 +709,6 @@ nav {
   margin: 1rem 2rem;
   line-height: 2rem;
   text-align: center;
-
-
 }
 
 .contact-content-con .left-content .contact-info .contact-item {
@@ -794,7 +777,7 @@ nav {
 .contact-content-con .right-contact .input-control2 input,
 .contact-content-con .right-contact .input-control input,
 .contact-content-con .right-contact .input-control2 textarea {
-  font-family: inherit;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 200;
   border-radius: 30px;
@@ -823,7 +806,7 @@ nav {
 }
 
 .contact-content-con .right-contact .contact-form .submit-button button {
-  font-family: inherit;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 700;
   border-radius: 30px;
@@ -837,4 +820,461 @@ nav {
 
 .contact-content-con .right-contact .contact-form .submit-button button:hover {
   background-image: linear-gradient(to left, #e9204f, #4e5055);
+}
+
+/* Home.html media quarries*/
+
+/* Small devices (up to 768px) */
+@media (max-width: 768px) {
+
+  /* Adjust navigation bar layout */
+  nav .nav-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav .nav-content-1, 
+  nav .nav-content-2 {
+      width: 100%;
+      text-align: center;
+  }
+
+  nav ul {
+      flex-direction: column;
+      padding: 0;
+      margin: 10px 0;
+  }
+
+  nav ul li {
+      margin: 5px 0;
+  }
+
+  nav a button {
+      width: 100%;
+  }
+
+  /* Adjust header layout */
+  .header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .header-content .left-header, 
+  .header-content .right-header {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  /* Adjust image size */
+  .header-content .image img {
+      width: 150px;
+      height: auto;
+      border-radius: 50%;
+  }
+
+  /* Adjust text and button sizes */
+  .header-content .name {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+  }
+
+  .header-content p {
+      font-size: 1em;
+      margin: 5px 0;
+  }
+
+  .header-content .btn-cv .main-btn {
+      padding: 10px 20px;
+      font-size: 1em;
+  }
+}
+
+
+/* About.html media quarries*/
+
+/* Mobile devices (max-width: 600px) */
+@media (max-width: 600px) {
+  .nav-content {
+      flex-direction: column;
+  }
+
+  .nav-content-2 ul {
+      flex-direction: column;
+      padding: 0;
+  }
+
+  .nav-content-2 ul li {
+      margin-bottom: 10px;
+  }
+
+  .about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .about-img img {
+      width: 100%;
+      height: auto;
+  }
+
+  .about-text h2 {
+      font-size: 1.5rem;
+  }
+
+  .progress-bars {
+      width: 100%;
+      padding: 0 10px;
+  }
+
+  .progress-bar {
+      width: 100%;
+      margin-bottom: 15px;
+  }
+}
+
+/* Tablet devices (max-width: 900px) */
+@media (max-width: 900px) {
+  .nav-content {
+      padding: 10px;
+  }
+
+  .nav-content-2 ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+  }
+
+  .about-text h2 {
+      font-size: 1.8rem;
+  }
+
+  .about-img img {
+      width: 80%;
+      margin-bottom: 20px;
+  }
+
+  .progress-bars {
+      padding: 0 20px;
+  }
+
+  .progress-bar {
+      width: 48%;
+      margin-bottom: 20px;
+  }
+}
+
+/* Small desktops (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .nav-content {
+      padding: 15px 30px;
+  }
+
+  .about {
+      flex-direction: row;
+      align-items: flex-start;
+  }
+
+  .about-img img {
+      width: 50%;
+  }
+
+  .about-text h2 {
+      font-size: 2rem;
+  }
+
+  .progress-bars {
+      padding: 0 40px;
+  }
+
+  .progress-bar {
+      width: 45%;
+      margin-bottom: 25px;
+  }
+}
+
+/* Portfolio page */
+
+/* General styles for smaller screens */
+@media (max-width: 1024px) {
+  .nav-content-2 ul {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .container {
+      padding: 10px;
+  }
+
+  .portfolios {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-content-2 ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .portfolios {
+      grid-template-columns: 1fr;
+      gap: 15px;
+  }
+
+  .portfolio-item {
+      max-width: 100%;
+      margin: 0 auto;
+  }
+
+  .main-title h2 {
+      font-size: 1.8em;
+      text-align: center;
+  }
+
+  .port-text {
+      font-size: 1em;
+      text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-content {
+      padding: 10px;
+  }
+
+  .nav-content-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-content-2 ul {
+      padding: 0;
+  }
+
+  .container .main-title h2 {
+      font-size: 1.5em;
+  }
+
+  .portfolio-item {
+      padding: 10px;
+  }
+
+  .portfolio-item .hover-items h3 {
+      font-size: 1em;
+      text-align: center;
+  }
+
+  .portfolios {
+      grid-template-columns: 1fr;
+      gap: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .nav-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-content-2 ul li a {
+      font-size: 0.9em;
+  }
+
+  .portfolios {
+      grid-template-columns: 1fr;
+      gap: 5px;
+  }
+
+  .portfolio-item .hover-items h3 {
+      font-size: 0.9em;
+  }
+
+  .container .main-title h2 {
+      font-size: 1.3em;
+  }
+
+  .port-text {
+      font-size: 0.9em;
+  }
+}
+
+/* blog page */
+/* General styles for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Adjust Navbar */
+  .nav-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .nav-content-2 ul {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .nav-content-2 ul li {
+      margin: 10px 0;
+  }
+
+  /* Blog Section Adjustments */
+  .container {
+      padding: 10px;
+  }
+
+  .blogs {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+  }
+
+  /* Blog Text Alignment */
+  .blog-text h4,
+  .blog-text p {
+      text-align: center;
+  }
+
+  /* Reduce Image Size */
+  .blog img {
+      width: 100%;
+      height: auto;
+  }
+}
+
+/* Extra Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  /* Navbar Button Adjustments */
+  .nav-content-2 button {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+
+  /* Blog Section Padding */
+  .blog-header h2 {
+      font-size: 1.5em;
+  }
+
+  .blogs .blog {
+      padding: 10px;
+  }
+
+  /* Blog Text Font Size */
+  .blog-text h4 {
+      font-size: 1em;
+  }
+
+  .blog-text p {
+      font-size: 0.9em;
+  }
+}
+
+
+
+/* Contact page */
+
+/* Base media query for small screens (smartphones) */
+@media (max-width: 600px) {
+  /* Adjust the navigation */
+  .nav-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .nav-content-2 ul {
+      flex-direction: column;
+      padding: 0;
+  }
+
+  .nav-content-2 ul li {
+      margin: 10px 0;
+  }
+
+  /* Resize logo */
+  .logo img {
+      width: 80px; /* Adjust as necessary */
+  }
+
+  /* Contact section adjustments */
+  .contact-container {
+      flex-direction: column;
+  }
+
+  .left-content,
+  .right-contact {
+      width: 100%;
+      padding: 10px;
+  }
+
+  /* Adjust text inputs and textarea */
+  .input-control,
+  .input-control2 {
+      width: 100%;
+  }
+
+  .input-control-email,
+  .contact-form textarea {
+      width: 100%;
+  }
+
+  /* Contact icons alignment */
+  .contact-icons {
+      justify-content: center;
+  }
+}
+
+/* Tablet view adjustments */
+@media (min-width: 601px) and (max-width: 768px) {
+  .nav-content-2 ul {
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  .contact-container {
+      flex-direction: column;
+  }
+
+  .left-content,
+  .right-contact {
+      width: 90%;
+      margin: auto;
+  }
+
+  /* Resize form controls */
+  .input-control,
+  .input-control2,
+  .input-control-email,
+  .contact-form textarea {
+      width: 100%;
+      padding: 8px;
+  }
+}
+
+/* Desktop adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Slightly reduce font size for readability */
+  body {
+      font-size: 0.95em;
+  }
+
+  /* Adjust padding for a spacious layout */
+  .contact-container {
+      padding: 20px;
+  }
+
+  .input-control,
+  .input-control2 {
+      padding: 10px;
+  }
 }
